@@ -28,4 +28,15 @@ public class MainActivity extends AppCompatActivity {
         num = 0;
         value.setText(Integer.toString(num));
     }
+
+    public void button3_click(View view) {
+        int num;
+        TextView value = (TextView) findViewById(R.id.label_layout);
+        num = Integer.parseInt(value.getText().toString());
+        if(num==0)
+            num=0;
+        else
+            num--;
+        value.setText(Integer.toString(num));
+    }
 }
